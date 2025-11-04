@@ -58,10 +58,10 @@ SELECT user_login, user_pass FROM wp_users; parametrelerini açılan ekranda gir
 Mysql Sorgusu: ![Mysql2](Pictures/24.png) <br>
 Şimdi yapmamız gereken, bu hash'leri Kali makinemize alıp kırmak ve elde edilen şifreyi kullanarak bir Linux kullanıcısına geçiş yapmaktır. Çektiğimiz hash'ler, WordPress Portable Hash formatındadır (başında $P$B etiketi bulunur). Bu format, MD5 tabanlıdır ve John the Ripper veya Hashcat gibi toollar ile kolayca kırılabilir. <br>
 Bir hash'i(Diego) kali makinemizde hashes.txt olarak kaydedelim ve john ile kıralım. <br>
-John: ![John](Pictures/25-yerine.png) <br>
+John: ![John](Pictures/25.png) <br>
 john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt komutumuz. <br>
 Parola: sandiegocalifornia <br>
-Kullanıcı Değişimi: ![diego](Pictures/26-yerine.png) <br>
+Kullanıcı Değişimi: ![diego](Pictures/26.png) <br>
 su - diego komutuyla kullanıcı değiştirelim. Parola sorduğunda ise bulduğumuz "sandiegocalifornia" parolasını yazalım. <br>
 User.txt dosyasından user flag'imizi aldık. Şimdi sıra root flag'i almakta. <br>
 Şimdi aynı işlemleri tek tek bütün kullanıcılar için yapalım. Denemelerim sonucunda xavi kullanıcısının içinde root flag. <br>
