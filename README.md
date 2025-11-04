@@ -69,7 +69,7 @@ Xavi kullanıcısının parolası: P@ssw0rdxavi@ bu parolayı aynı şekilde su 
 Xavi kullanıcısına geçtikten sonra sudo su komutuyla root yetkileri edinelim. <br>
 Sudo -l Komutu: ![root](Pictures/27.png) <br>
 sudo -l komutunu yazalım. Bu komut, kullanıcımızın root yetkisiyle nerelere erişebildiğini gösterir. <br>
-Root Flag: ![root_flag](Pictures/28) <br>
+Root Flag: ![root_flag](Pictures/28.png) <br>
 root klasörü içinde root.txt dosyasının olduğunu göreceğiz. cat root.txt komutuyla dosyayı okuyup root flag'imizi alıyoruz. <br>
 Okuduğunuz için teşekkür ederim. https://www.linkedin.com/in/albora-dogan-deniz-4a56a21b8/
 
